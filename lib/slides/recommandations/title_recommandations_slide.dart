@@ -1,18 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_deck/flutter_deck.dart';
+import '../../commons/title_slide_template.dart';
 
-class TitleRecommandationsSlide extends FlutterDeckSlideWidget {
-  static const title = "Quelques recommandations";
-
-  const TitleRecommandationsSlide()
+class TitleRecommandationsSlide extends TitleSlideTemplate {
+  TitleRecommandationsSlide()
       : super(
-          configuration: const FlutterDeckSlideConfiguration(
-            route: '/recommandations-title',
-          ),
+          route: '/recommandations-title',
+          title: "\u{1F4BB} Quelques recommandations \u{1F4BB}",
+          talks: [],
         );
-
-  @override
-  FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.bigFact(title: title);
-  }
 }

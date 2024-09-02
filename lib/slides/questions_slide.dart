@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class TitleSlide extends FlutterDeckSlideWidget {
-  const TitleSlide()
+class QuestionsSlide extends FlutterDeckSlideWidget {
+  const QuestionsSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/title',
+            route: '/questions',
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
-      imageBuilder: (_) => Image.asset("assets/images/fluttercon.jpg"),
+      imageBuilder: (_) => Image.asset("assets/images/questions.jpg"),
     );
   }
 }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class MigratingToFlutterSlide extends FlutterDeckSlideWidget {
-  const MigratingToFlutterSlide()
+class SavingDataSlide extends FlutterDeckSlideWidget {
+  const SavingDataSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/migrating-to-flutter',
+            route: '/saving-data',
           ),
         );
 
@@ -14,9 +14,9 @@ class MigratingToFlutterSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.template(
       headerBuilder: (_) => const FlutterDeckHeader(
           title:
-              "Migrating 2+ Million daily users to Flutter with 50+ Engineers (Bruno Reginato & Csongor Vogel & Lucas Britto, Delivery Hero)"),
+              "Saving data before the app getting killed! Easy state restoration with Flutter (Lucas Goldner, Youtrust)"),
       contentBuilder: (_) =>
-          Center(child: Image.asset("assets/images/delivery_hero.jpg")),
+          Center(child: Image.asset("assets/images/switch_app.png")),
     );
   }
 }
