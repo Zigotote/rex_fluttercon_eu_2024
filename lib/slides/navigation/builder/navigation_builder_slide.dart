@@ -56,12 +56,7 @@ class HomeRoute extends GoRouteData {
     )
   ],
 )
-class HomeRoute extends GoRouteData { 
-  const HomeRoute();
-
-  @override
-  Widget build(BuildContext context, GoRouterState state) => const HomeWidget();
-}
+class HomeRoute extends GoRouteData { ... }
 
 class PageRoute extends GoRouteData {
   final int id;

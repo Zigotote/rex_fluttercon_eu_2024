@@ -27,7 +27,7 @@ class TitleSlideTemplate extends FlutterDeckSlideWidget {
       title: _title,
       subtitle: _subtitle,
       footerBuilder: (_) => Padding(
-        padding: const EdgeInsets.only(left: 8, bottom: 16),
+        padding: const EdgeInsets.only(left: 16, bottom: 64),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: talks

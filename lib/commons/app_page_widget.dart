@@ -3,13 +3,22 @@ import 'package:go_router/go_router.dart';
 
 class AppPageWidget extends StatelessWidget {
   final int id;
+  final bool hasHero;
 
-  const AppPageWidget({super.key, required this.id});
+  const AppPageWidget({super.key, required this.id, this.hasHero = false});
 
   @override
   Widget build(BuildContext context) {
+    final text = Text("Page $id");
     return Scaffold(
-      appBar: AppBar(title: Text("Page $id")),
+      appBar: AppBar(
+        title: hasHero
+            ? Hero(
+                tag: id,
+                child: Material(type: MaterialType.transparency, child: text),
+              )
+            : text,
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
