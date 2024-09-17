@@ -68,6 +68,24 @@ class PresentMyselfSlide extends FlutterDeckSlideWidget {
               )
             ],
           ),
+          const SizedBox(height: 16),
+          Row(
+            children: [
+              Image.asset(
+                "assets/images/github.png",
+                height: 40,
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: AutoSizeText(
+                  "Zigotote",
+                  group: autoSizeGroup,
+                  minFontSize: 40,
+                  maxFontSize: double.infinity,
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
