@@ -23,7 +23,7 @@ jobs:
           channel: stable
           cache: true
       - name: Build Website
-        run: flutter build web -t lib/main.dart
+        run: flutter build web -t lib/main.dart --base-href=/rex_fluttercon_eu_2024/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
